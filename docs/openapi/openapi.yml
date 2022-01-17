@@ -1,0 +1,22 @@
+openapi: 3.0.0
+info:
+  title: 'referenceDocs'
+  description: "Thumbnail generator for jpg, jpeg and png images."
+  version: 1.0.0
+  contact:
+    name: API Thumbnail
+    email: d99maxi@gmail.com
+
+
+servers:
+  - url: https://d1se8akub48lvs.cloudfront.net/
+
+paths:
+  /thumbnail:
+    $ref: './functions/thumbnail.yml#/paths'
+  /thumbnail/{id}:
+    $ref: './functions/list.yml#/paths'
+  /resize/{height}/{width}/{id}:
+    $ref: './functions/resize.yml#/paths'
+
+

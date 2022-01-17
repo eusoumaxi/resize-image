@@ -1,0 +1,13 @@
+paths:
+  get:
+    summary: 'Image resizing by api'
+    description: 'Image resizing by api'
+    responses:
+      200:
+        description: 'Resized image binary'
+      400:
+        description: 'The uploaded document does not meet the criteria.'
+      404:
+        description: 'The consultant id is not yet available'
+      500:
+        description: 'An internal error occurred.'

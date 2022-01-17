@@ -1,0 +1,11 @@
+paths:
+  get:
+    summary: 'Get by id Thumbnail'
+    description: 'Get by id Thumbnail'
+    responses:
+      200:
+        description: 'Processed image list'
+      404:
+        description: 'The consultant id is not yet available'
+      500:
+        description: 'Internal Server Error'
